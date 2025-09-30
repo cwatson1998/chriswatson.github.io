@@ -7,7 +7,7 @@ author_profile: true
 My name is Chris Watson and I'm a fifth-year Ph.D. student at the University of Pennsylvania, where I am very fortunate to be advised by [Rajeev Alur](https://www.cis.upenn.edu/~alur/) and [Dinesh Jayaraman](https://www.seas.upenn.edu/~dineshj/). I work at the intersection of Robot Learning and Formal Methods.
 
 
-I study how human-provided and autonomously-discovered task structure can work together to scaffold effective
+I study how human-provided and autonomously-discovered task structure can be combined to scaffold effective
 learning.
 <!-- TODO: needs a bit of work- look back at my WPE 2. -->
 Ideally, a task specification would be
@@ -15,9 +15,7 @@ intuitive for a human to provide,
 flexible enough to let the robot make the most of its capabilities,
 and expose structure (e.g. subgoals, relevant skills) within the task to facilitate efficient learning.
 However, a lot of the most interesting and useful task structure may not be obvious to humans; it must be
-discovered by the robot during learning.
-
-My research focus is to develop
+discovered by the robot during learning. My research focuses on:
 - forms of specification that leave room for the robot to add its own learned information,
 - learning algorithms that let the robot discover task structure from firsthand experience,
 - training methodologies that harmoniously combine both sources of structure.
