@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Preprints"
+permalink: /preprints/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign preprints = site.preprints %}
+{% if preprints and preprints != empty %}
+  {% for post in preprints reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>No preprints available yet.</p>
+{% endif %}
