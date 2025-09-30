@@ -4,15 +4,13 @@ title: "Christopher Watson"
 author_profile: true
 ---
 
-My name is Chris Watson and I'm a fifth-year Ph.D. student at the University of Pennsylvania, where I am very fortunate to be advised by [Rajeev Alur](https://www.cis.upenn.edu/~alur/) and [Dinesh Jayaraman](https://www.seas.upenn.edu/~dineshj/).
+My name is Chris Watson and I'm a fifth-year Ph.D. student at the University of Pennsylvania, where I am very fortunate to be advised by [Rajeev Alur](https://www.cis.upenn.edu/~alur/) and [Dinesh Jayaraman](https://www.seas.upenn.edu/~dineshj/). I work at the intersection of Robot Learning and Formal Methods.
 
-## Research Focus {#about}
 
-I work at the intersection of Robot Learning and Formal Methods.
 I study how human-provided and autonomously-discovered task structure can work together to scaffold effective
 learning.
-
-Ideally, a specification would be
+<!-- TODO: needs a bit of work- look back at my WPE 2. -->
+Ideally, a task specification would be
 intuitive for a human to provide,
 flexible enough to let the robot make the most of its capabilities,
 and expose structure (e.g. subgoals, relevant skills) within the task to facilitate efficient learning.
