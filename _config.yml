@@ -13,9 +13,9 @@ title                    : "Christopher Watson"
 title_separator          : "-"
 name                     : &name "Christopher Watson"
 description              : &description "Ph.D. student working at the intersection of robot learning and formal methods."   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://www.seas.upenn.edu # The base hostname & protocol for your site
-baseurl                  : "/~ccwatson" # the subpath of your site, e.g. "/blog"
-repository               : # optional: update with the GitHub repository slug if you use GitHub integrations
+url                      : https://cwatson1998.github.io # The base hostname & protocol for your site
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : cwatson1998/cwatson1998.github.io # optional: update with the GitHub repository slug if you use GitHub integrations
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
