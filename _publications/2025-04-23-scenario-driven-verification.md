@@ -9,4 +9,5 @@ venue: 'SAIV 2025'
 paperurl: 'https://arxiv.org/abs/2504.20942'
 citation: Christopher Watson, Rajeev Alur, Divya Gopinath, Ravi Mangal, Corina Păsăreanu. "Scenario-based Compositional Verification of Autonomous Systems with Neural Perception." <i>Symposium on AI Verification (SAIV)</i>, 2025.
 selected: False
+order: 700
 ---

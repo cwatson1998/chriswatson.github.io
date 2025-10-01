@@ -6,5 +6,6 @@ venue: "University of Pennsylvania"
 date: 2023-01-01
 location: "Philadelphia, PA"
 term: "Spring 2023"
+instructor: "Rajeev Alur"
 ---
 

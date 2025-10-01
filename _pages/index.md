@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 My name is Chris Watson and I'm a fifth-year Ph.D. student at the University of Pennsylvania, where I am very fortunate to be advised by [Rajeev Alur](https://www.cis.upenn.edu/~alur/) and [Dinesh Jayaraman](https://www.seas.upenn.edu/~dineshj/). 
-
+I am also very fortunate to have worked with [Corina Păsăreanu](https://www.andrew.cmu.edu/user/pcorina/) at the NASA Ames Research center as a research intern during summer 2024. Before starting my Ph.D., I completed my undergraduate studies in Computer Science at Cornell University.
 
 I work at the intersection of robot learning and formal methods. In particular, I study how human-provided and autonomously-discovered task structure can be combined to scaffold effective learning. 
 Ideally, it would be easy for a human to specify a task in a way that 
@@ -19,33 +19,22 @@ To address this, my research focuses on:
 
 <!-- I am part of the [ASSET Center](https://asset.seas.upenn.edu/) and [PLClub](https://www.cis.upenn.edu/~plclub/) at Penn. -->
 
-{% assign selected_pubs = site.publications | where: "selected", true | sort: 'date' | reverse %}
+<!-- Needlessly complicated: I am actually not testing for "selected" anymore- all publications are displayed -->
+{% assign selected_pubs = site.publications | sort: 'order' %}
 {% if selected_pubs and selected_pubs != empty %}
-## Selected Publications and Preprints {#publications}
+## Publications and Preprints {#publications}
 {% for pub in selected_pubs %}
 - **{{ pub.title }}**. {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% if pub.paperurl %} ([Paper]({{ pub.paperurl }})){% endif %}
 {% endfor %}
 
 {% endif %}
 
-## Additional Publications {#additional-publications}
-{% assign pubs = site.publications | sort: 'date' | reverse %}
-{% for pub in pubs %}
-{% if pub.selected %}
-{% continue %}
-{% endif %}
-- **{{ pub.title }}**. {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% if pub.paperurl %} ([Paper]({{ pub.paperurl }})){% endif %}
-{% endfor %}
-
-
-## Teaching {#teaching}
+## Teaching Assistantships {#teaching}
 {% assign courses = site.teaching | sort: 'date' | reverse %}
 {% for course in courses %}
-- **{{ course.title }}**. {{ course.venue }}. {{ course.term | default: course.date | date: "%B %Y" }}{% if course.class_url %} ([Course site]({{ course.class_url }})){% endif %}
+- **{{ course.title }}**. {{ course.venue }}. Instructor: {{ course.instructor }}. {{ course.term | default: course.date | date: "%B %Y" }}{% if course.class_url %} ([Course site]({{ course.class_url }})){% endif %}
 {% endfor %}
 
 
 ## Activities {#activities}
 I've had the pleasure of being a student volunteer at [POPL 2022](https://popl22.sigplan.org/) and [CCC 2022](https://www.computationalcomplexity.org/), and of being a student at [SSFT 2022](https://fm.csl.sri.com/SSFT22/) and [OPLSS 2022](https://www.cs.uoregon.edu/research/summerschool/summer22/).
-
-You can reach me at `ccwatson [at] seas [dot] upenn [dot] edu`.
