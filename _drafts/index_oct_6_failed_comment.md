@@ -4,16 +4,14 @@ title: "Christopher Watson"
 author_profile: true
 ---
 
-My name is Chris Watson and I'm a fifth-year Ph.D. student at the University of Pennsylvania.
-I work at the intersection of robot learning and formal methods, and am very fortunate to be advised by [Rajeev Alur](https://www.cis.upenn.edu/~alur/) and [Dinesh Jayaraman](https://www.seas.upenn.edu/~dineshj/). 
+My name is Chris Watson and I'm a fifth-year Ph.D. student at the University of Pennsylvania, where I am very fortunate to be advised by [Rajeev Alur](https://www.cis.upenn.edu/~alur/) and [Dinesh Jayaraman](https://www.seas.upenn.edu/~dineshj/). 
 I am also very fortunate to have worked with [Corina Păsăreanu](https://www.andrew.cmu.edu/user/pcorina/) at the NASA Ames Research center as a research intern during summer 2024. Before starting my Ph.D., I completed my undergraduate studies in Computer Science at Cornell University.
 
 
-
-It's a really exciting time to be working with robots! 
-Recent breakthroughs in large AI models have brought us closer than ever to creating general-purpose robots that adapt quickly to new tasks and environments.
+I work at the intersection of robot learning and formal methods.
+Recent advances in large AI models have brought us closer than ever to realizing the dream of general-purpose robots that adapt quickly and reliably to new tasks and environments.
 However, approaches that focus entirely on scaling data lack safety guarantees and may not fully exploit task structure to make the most of (often scarce) robot training data.
-My research draws from formal methods and symbolic reasoning to improve the reliability and efficiency of robot learning.
+My research takes inspiration from formal methods and symbolic reasoning to improve the reliability and efficiency of robot learning.
 Recently, I've been focusing on ways to combine human-provided and autonomously-discovered task structure to scaffold effective learning. 
 {% comment %}
 Ideally, it would be easy for a human to specify a task in a way that 
@@ -26,15 +24,14 @@ To address this, my research focuses on:
 - Training methodologies that harmoniously combine both sources of structure
 {% endcomment %}
 
-{% comment %} I am part of the [ASSET Center](https://asset.seas.upenn.edu/) and [PLClub](https://www.cis.upenn.edu/~plclub/) at Penn. {% endcomment %}
+<!-- I am part of the [ASSET Center](https://asset.seas.upenn.edu/) and [PLClub](https://www.cis.upenn.edu/~plclub/) at Penn. -->
 
-{% comment %} Needlessly complicated: I am actually not testing for "selected" anymore- all publications are displayed {% endcomment %}
+<!-- Needlessly complicated: I am actually not testing for "selected" anymore- all publications are displayed -->
 {% assign selected_pubs = site.publications | sort: 'order' %}
 {% if selected_pubs and selected_pubs != empty %}
 ## Publications and Preprints {#publications}
 {% for pub in selected_pubs %}
-{% assign authors = pub.citation | split: '. "' | first %}
-- [**{{ pub.title }}**]({{ pub.paperurl }}). {{ authors }}. *{{ pub.venue }}*.
+- **{{ pub.title }}**. {{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% if pub.paperurl %} ([Paper]({{ pub.paperurl }})){% endif %}
 {% endfor %}
 
 {% endif %}
